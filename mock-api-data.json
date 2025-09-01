@@ -1,0 +1,182 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Future of Web Development: AI-Powered Tools",
+      "description": "Explore how artificial intelligence is revolutionizing the way we build and maintain websites, from automated testing to intelligent code generation.",
+      "category": "Technology",
+      "date": "2024-01-15T10:30:00Z",
+      "views": 15420,
+      "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%233b82f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-size='16'%3EAI Web Development%3C/text%3E%3C/svg%3E",
+      "link": "https://example.com/ai-web-development"
+    },
+    {
+      "id": 2,
+      "title": "Sustainable Living: 10 Easy Ways to Reduce Your Carbon Footprint",
+      "description": "Simple yet effective strategies for living a more environmentally conscious lifestyle without drastically changing your daily routine.",
+      "category": "Lifestyle",
+      "date": "2024-01-14T14:20:00Z",
+      "views": 8920,
+      "thumbnail": "https://picsum.photos/400/200?random=2",
+      "link": "https://example.com/sustainable-living"
+    },
+    {
+      "id": 3,
+      "title": "The Psychology of Color in Marketing",
+      "description": "Understanding how different colors influence consumer behavior and decision-making processes in marketing campaigns.",
+      "category": "Marketing",
+      "date": "2024-01-13T09:15:00Z",
+      "views": 12350,
+      "thumbnail": "https://picsum.photos/400/200?random=3",
+      "link": "https://example.com/color-psychology-marketing"
+    },
+    {
+      "id": 4,
+      "title": "Remote Work Productivity: Tools and Techniques",
+      "description": "Essential tools and proven techniques to maximize productivity while working from home or any remote location.",
+      "category": "Business",
+      "date": "2024-01-12T16:45:00Z",
+      "views": 18760,
+      "thumbnail": "https://picsum.photos/400/200?random=4",
+      "link": "https://example.com/remote-work-productivity"
+    },
+    {
+      "id": 5,
+      "title": "Healthy Meal Prep: Quick Recipes for Busy Professionals",
+      "description": "Time-saving meal preparation strategies and delicious recipes that fit into even the busiest schedules.",
+      "category": "Health",
+      "date": "2024-01-11T11:30:00Z",
+      "views": 9650,
+      "thumbnail": "https://picsum.photos/400/200?random=5",
+      "link": "https://example.com/healthy-meal-prep"
+    },
+    {
+      "id": 6,
+      "title": "Digital Marketing Trends for 2024",
+      "description": "Stay ahead of the curve with these emerging digital marketing trends that will dominate the industry this year.",
+      "category": "Marketing",
+      "date": "2024-01-10T13:20:00Z",
+      "views": 14230,
+      "thumbnail": "https://picsum.photos/400/200?random=6",
+      "link": "https://example.com/digital-marketing-trends-2024"
+    },
+    {
+      "id": 7,
+      "title": "Financial Planning for Millennials",
+      "description": "Essential financial planning strategies tailored specifically for millennials navigating today's economic landscape.",
+      "category": "Finance",
+      "date": "2024-01-09T15:10:00Z",
+      "views": 11890,
+      "thumbnail": "https://picsum.photos/400/200?random=7",
+      "link": "https://example.com/financial-planning-millennials"
+    },
+    {
+      "id": 8,
+      "title": "The Rise of Electric Vehicles: What You Need to Know",
+      "description": "Comprehensive guide to electric vehicles, from understanding the technology to making informed purchasing decisions.",
+      "category": "Technology",
+      "date": "2024-01-08T12:00:00Z",
+      "views": 16780,
+      "thumbnail": "https://picsum.photos/400/200?random=8",
+      "link": "https://example.com/electric-vehicles-guide"
+    },
+    {
+      "id": 9,
+      "title": "Mindfulness and Mental Health in the Digital Age",
+      "description": "Practical mindfulness techniques to maintain mental well-being in our increasingly connected and fast-paced world.",
+      "category": "Health",
+      "date": "2024-01-07T10:45:00Z",
+      "views": 13450,
+      "thumbnail": "https://picsum.photos/400/200?random=9",
+      "link": "https://example.com/mindfulness-digital-age"
+    },
+    {
+      "id": 10,
+      "title": "Startup Success Stories: Lessons from the Front Lines",
+      "description": "Real stories from successful entrepreneurs sharing the challenges, failures, and triumphs of building their businesses.",
+      "category": "Business",
+      "date": "2024-01-06T14:30:00Z",
+      "views": 15670,
+      "thumbnail": "https://picsum.photos/400/200?random=10",
+      "link": "https://example.com/startup-success-stories"
+    },
+    {
+      "id": 11,
+      "title": "The Art of Photography: Composition Techniques",
+      "description": "Master the fundamentals of photographic composition to create stunning images that tell compelling visual stories.",
+      "category": "Arts",
+      "date": "2024-01-05T09:20:00Z",
+      "views": 8760,
+      "thumbnail": "https://picsum.photos/400/200?random=11",
+      "link": "https://example.com/photography-composition"
+    },
+    {
+      "id": 12,
+      "title": "Cybersecurity Best Practices for Small Businesses",
+      "description": "Essential cybersecurity measures that small businesses can implement to protect their data and systems.",
+      "category": "Technology",
+      "date": "2024-01-04T16:15:00Z",
+      "views": 11240,
+      "thumbnail": "https://picsum.photos/400/200?random=12",
+      "link": "https://example.com/cybersecurity-small-business"
+    }
+  ],
+  "ads": [
+    {
+      "slot": "banner_top",
+      "image_url": "https://picsum.photos/728/90?random=101",
+      "click_url": "https://example.com/ad-top",
+      "alt_text": "Premium advertising banner - top position"
+    },
+    {
+      "slot": "sidebar_1",
+      "image_url": "https://picsum.photos/300/250?random=102",
+      "click_url": "https://example.com/ad-sidebar-1",
+      "alt_text": "Sidebar advertising - position 1"
+    },
+    {
+      "slot": "sidebar_2",
+      "image_url": "https://picsum.photos/300/250?random=103",
+      "click_url": "https://example.com/ad-sidebar-2",
+      "alt_text": "Sidebar advertising - position 2"
+    },
+    {
+      "slot": "banner_footer",
+      "image_url": "https://picsum.photos/728/90?random=104",
+      "click_url": "https://example.com/ad-footer",
+      "alt_text": "Footer advertising banner"
+    },
+    {
+      "slot": "inline_1",
+      "image_url": "https://picsum.photos/728/120?random=105",
+      "click_url": "https://example.com/ad-inline-1",
+      "alt_text": "Inline advertising - position 1"
+    },
+    {
+      "slot": "inline_2",
+      "image_url": "https://picsum.photos/728/120?random=106",
+      "click_url": "https://example.com/ad-inline-2",
+      "alt_text": "Inline advertising - position 2"
+    },
+    {
+      "slot": "mobile_banner",
+      "image_url": "https://picsum.photos/320/50?random=107",
+      "click_url": "https://example.com/ad-mobile",
+      "alt_text": "Mobile advertising banner"
+    }
+  ],
+  "branding": {
+    "logo_url": "https://picsum.photos/150/50?random=200",
+    "primary_color": "#4f46e5",
+    "secondary_color": "#facc15",
+    "accent_color": "#14b8a6",
+    "company_name": "ContentHub",
+    "tagline": "Your Gateway to Quality Content",
+    "social_links": {
+      "facebook": "https://facebook.com/contenthub",
+      "twitter": "https://twitter.com/contenthub",
+      "linkedin": "https://linkedin.com/company/contenthub",
+      "instagram": "https://instagram.com/contenthub"
+    }
+  }
+}

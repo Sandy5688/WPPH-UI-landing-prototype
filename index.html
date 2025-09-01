@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lightweight responsive content display with ad placement zones">
+    <meta name="keywords" content="content, articles, news, responsive">
+    <title>Content Display UI</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Sticky Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">ContentHub</h1>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Categories</a>
+                    <a href="#" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Ad Banner (Scrolls normally) -->
+    <div class="ad-banner ad-header">
+        <div class="ad-placeholder">
+            <span>Header Ad Banner (728×90)</span>
+            <small>Replace with your ad code</small>
+        </div>
+    </div>
+    
+    <!-- Mobile Ad Banner (Hidden on Desktop) -->
+    <div class="ad-banner ad-mobile">
+        <div class="ad-placeholder">
+            <span>Mobile Ad (320×50)</span>
+            <small>Replace with your ad code</small>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Main Content Area (Left Side) -->
+                <div class="content-main">
+                    <!-- Search and Filter Controls -->
+                    <div class="controls">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search content...">
+                            <button type="button" class="search-btn" aria-label="Search">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="filter-controls">
+                            <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+                                <option value="">All Categories</option>
+                            </select>
+                            
+                            <select id="sortFilter" class="filter-select" aria-label="Sort content">
+                                <option value="newest">Newest</option>
+                                <option value="popular">Popular</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Content Grid -->
+                    <div class="content-grid" id="contentGrid">
+                        <!-- Content cards will be dynamically inserted here -->
+                        <div class="loading">Loading content...</div>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar (Right Side) -->
+                <aside class="sidebar">
+                    <!-- Sidebar Ad -->
+                    <div class="ad-sidebar">
+                        <div class="ad-placeholder">
+                            <span>Sidebar Ad (300×600)</span>
+                            <small>Replace with your ad code</small>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Ad Banner (Scrolls normally) -->
+    <div class="ad-banner ad-footer">
+        <div class="ad-placeholder">
+            <span>Footer Ad Banner (728×90)</span>
+            <small>Replace with your ad code</small>
+        </div>
+    </div>
+
+    <!-- Sticky Footer Content -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 ContentHub. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
