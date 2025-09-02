@@ -7,7 +7,7 @@ class ContentDisplayUI {
     constructor() {
         // Configuration
         this.config = {
-            apiUrl: 'https://68b43ecb45c90167876fdf56.mockapi.io/api/v1/posts',
+            apiUrl: 'mock-api-data.json',
             itemsPerPage: 6,
             searchDebounceMs: 300,
             adFrequency: 5 // Show ad every 5th content item
@@ -102,28 +102,38 @@ class ContentDisplayUI {
             
             const data = await response.json();
             
-            // Handle the MockAPI structure where each item has posts, ads, and branding
-            if (Array.isArray(data) && data.length > 0) {
-                // Find the first item that has posts, ads, and branding
-                const itemWithData = data.find(item => item.posts && item.ads && item.branding);
-                
-                if (itemWithData) {
-                    this.content = itemWithData.posts || [];
-                    this.ads = itemWithData.ads || [];
-                    this.branding = itemWithData.branding || {};
-                } else {
-                    // Fallback: treat the array as posts
-                    this.content = data;
-                    this.ads = [];
-                    this.branding = {};
-                }
-            } else if (data && typeof data === 'object') {
-                // Direct object format
-                this.content = data.posts || [];
+            // New schema: array of video-like items only
+            if (Array.isArray(data)) {
+                this.content = data.map(item => ({
+                    id: item.id,
+                    title: item.title,
+                    description: item.description,
+                    category: item.category,
+                    // map new fields
+                    date: item.published_at,
+                    views: typeof item.views === 'number' ? item.views : 0,
+                    thumbnail: item.thumbnail_url,
+                    link: item.media_url,
+                    tags: Array.isArray(item.tags) ? item.tags : [],
+                    source: item.source
+                }));
+                this.ads = [];
+                this.branding = {};
+            } else if (data && typeof data === 'object' && Array.isArray(data.posts)) {
+                // Backward compatibility if object with posts is served
+                this.content = (data.posts || []).map(item => ({
+                    id: String(item.id),
+                    title: item.title,
+                    description: item.description,
+                    category: item.category,
+                    date: item.date || item.published_at,
+                    views: typeof item.views === 'number' ? item.views : 0,
+                    thumbnail: item.thumbnail || item.thumbnail_url,
+                    link: item.link || item.media_url,
+                }));
                 this.ads = data.ads || [];
                 this.branding = data.branding || {};
             } else {
-                // Fallback
                 this.content = [];
                 this.ads = [];
                 this.branding = {};
@@ -189,13 +199,13 @@ class ContentDisplayUI {
     sortContent(sortBy) {
         switch (sortBy) {
             case 'newest':
-                this.filteredContent.sort((a, b) => new Date(b.date) - new Date(a.date));
+                this.filteredContent.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
                 break;
             case 'popular':
-                this.filteredContent.sort((a, b) => b.views - a.views);
+                this.filteredContent.sort((a, b) => (b.views || 0) - (a.views || 0));
                 break;
             default:
-                this.filteredContent.sort((a, b) => new Date(b.date) - new Date(a.date));
+                this.filteredContent.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
         }
     }
     
@@ -264,7 +274,7 @@ class ContentDisplayUI {
                 <p class="card-description">${sanitizedDescription}</p>
                 <div class="card-meta">
                     <span>${this.formatDate(item.date)}</span>
-                    <span>${item.views.toLocaleString()} views</span>
+                    <span>${(item.views || 0).toLocaleString()} views</span>
                 </div>
             </div>
         `;

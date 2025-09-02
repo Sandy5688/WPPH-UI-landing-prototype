@@ -1,124 +1,136 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "The Future of Web Development: AI-Powered Tools",
       "description": "Explore how artificial intelligence is revolutionizing the way we build and maintain websites, from automated testing to intelligent code generation.",
+      "tags": [],
       "category": "Technology",
-      "date": "2024-01-15T10:30:00Z",
-      "views": 15420,
-      "thumbnail": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%233b82f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-size='16'%3EAI Web Development%3C/text%3E%3C/svg%3E",
-      "link": "https://example.com/ai-web-development"
+      "media_url": "https://example.com/ai-web-development",
+      "thumbnail_url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%233b82f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-size='16'%3EAI Web Development%3C/text%3E%3C/svg%3E",
+      "published_at": "2024-01-15T10:30:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Sustainable Living: 10 Easy Ways to Reduce Your Carbon Footprint",
       "description": "Simple yet effective strategies for living a more environmentally conscious lifestyle without drastically changing your daily routine.",
+      "tags": [],
       "category": "Lifestyle",
-      "date": "2024-01-14T14:20:00Z",
-      "views": 8920,
-      "thumbnail": "https://picsum.photos/400/200?random=2",
-      "link": "https://example.com/sustainable-living"
+      "media_url": "https://example.com/sustainable-living",
+      "thumbnail_url": "https://picsum.photos/400/200?random=2",
+      "published_at": "2024-01-14T14:20:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "The Psychology of Color in Marketing",
       "description": "Understanding how different colors influence consumer behavior and decision-making processes in marketing campaigns.",
+      "tags": [],
       "category": "Marketing",
-      "date": "2024-01-13T09:15:00Z",
-      "views": 12350,
-      "thumbnail": "https://picsum.photos/400/200?random=3",
-      "link": "https://example.com/color-psychology-marketing"
+      "media_url": "https://example.com/color-psychology-marketing",
+      "thumbnail_url": "https://picsum.photos/400/200?random=3",
+      "published_at": "2024-01-13T09:15:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Remote Work Productivity: Tools and Techniques",
       "description": "Essential tools and proven techniques to maximize productivity while working from home or any remote location.",
+      "tags": [],
       "category": "Business",
-      "date": "2024-01-12T16:45:00Z",
-      "views": 18760,
-      "thumbnail": "https://picsum.photos/400/200?random=4",
-      "link": "https://example.com/remote-work-productivity"
+      "media_url": "https://example.com/remote-work-productivity",
+      "thumbnail_url": "https://picsum.photos/400/200?random=4",
+      "published_at": "2024-01-12T16:45:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Healthy Meal Prep: Quick Recipes for Busy Professionals",
       "description": "Time-saving meal preparation strategies and delicious recipes that fit into even the busiest schedules.",
+      "tags": [],
       "category": "Health",
-      "date": "2024-01-11T11:30:00Z",
-      "views": 9650,
-      "thumbnail": "https://picsum.photos/400/200?random=5",
-      "link": "https://example.com/healthy-meal-prep"
+      "media_url": "https://example.com/healthy-meal-prep",
+      "thumbnail_url": "https://picsum.photos/400/200?random=5",
+      "published_at": "2024-01-11T11:30:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Digital Marketing Trends for 2024",
       "description": "Stay ahead of the curve with these emerging digital marketing trends that will dominate the industry this year.",
+      "tags": [],
       "category": "Marketing",
-      "date": "2024-01-10T13:20:00Z",
-      "views": 14230,
-      "thumbnail": "https://picsum.photos/400/200?random=6",
-      "link": "https://example.com/digital-marketing-trends-2024"
+      "media_url": "https://example.com/digital-marketing-trends-2024",
+      "thumbnail_url": "https://picsum.photos/400/200?random=6",
+      "published_at": "2024-01-10T13:20:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Financial Planning for Millennials",
       "description": "Essential financial planning strategies tailored specifically for millennials navigating today's economic landscape.",
+      "tags": [],
       "category": "Finance",
-      "date": "2024-01-09T15:10:00Z",
-      "views": 11890,
-      "thumbnail": "https://picsum.photos/400/200?random=7",
-      "link": "https://example.com/financial-planning-millennials"
+      "media_url": "https://example.com/financial-planning-millennials",
+      "thumbnail_url": "https://picsum.photos/400/200?random=7",
+      "published_at": "2024-01-09T15:10:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "The Rise of Electric Vehicles: What You Need to Know",
       "description": "Comprehensive guide to electric vehicles, from understanding the technology to making informed purchasing decisions.",
+      "tags": [],
       "category": "Technology",
-      "date": "2024-01-08T12:00:00Z",
-      "views": 16780,
-      "thumbnail": "https://picsum.photos/400/200?random=8",
-      "link": "https://example.com/electric-vehicles-guide"
+      "media_url": "https://example.com/electric-vehicles-guide",
+      "thumbnail_url": "https://picsum.photos/400/200?random=8",
+      "published_at": "2024-01-08T12:00:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Mindfulness and Mental Health in the Digital Age",
       "description": "Practical mindfulness techniques to maintain mental well-being in our increasingly connected and fast-paced world.",
+      "tags": [],
       "category": "Health",
-      "date": "2024-01-07T10:45:00Z",
-      "views": 13450,
-      "thumbnail": "https://picsum.photos/400/200?random=9",
-      "link": "https://example.com/mindfulness-digital-age"
+      "media_url": "https://example.com/mindfulness-digital-age",
+      "thumbnail_url": "https://picsum.photos/400/200?random=9",
+      "published_at": "2024-01-07T10:45:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Startup Success Stories: Lessons from the Front Lines",
       "description": "Real stories from successful entrepreneurs sharing the challenges, failures, and triumphs of building their businesses.",
+      "tags": [],
       "category": "Business",
-      "date": "2024-01-06T14:30:00Z",
-      "views": 15670,
-      "thumbnail": "https://picsum.photos/400/200?random=10",
-      "link": "https://example.com/startup-success-stories"
+      "media_url": "https://example.com/startup-success-stories",
+      "thumbnail_url": "https://picsum.photos/400/200?random=10",
+      "published_at": "2024-01-06T14:30:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "The Art of Photography: Composition Techniques",
       "description": "Master the fundamentals of photographic composition to create stunning images that tell compelling visual stories.",
+      "tags": [],
       "category": "Arts",
-      "date": "2024-01-05T09:20:00Z",
-      "views": 8760,
-      "thumbnail": "https://picsum.photos/400/200?random=11",
-      "link": "https://example.com/photography-composition"
+      "media_url": "https://example.com/photography-composition",
+      "thumbnail_url": "https://picsum.photos/400/200?random=11",
+      "published_at": "2024-01-05T09:20:00Z",
+      "source": "mock-data"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Cybersecurity Best Practices for Small Businesses",
       "description": "Essential cybersecurity measures that small businesses can implement to protect their data and systems.",
+      "tags": [],
       "category": "Technology",
-      "date": "2024-01-04T16:15:00Z",
-      "views": 11240,
-      "thumbnail": "https://picsum.photos/400/200?random=12",
-      "link": "https://example.com/cybersecurity-small-business"
+      "media_url": "https://example.com/cybersecurity-small-business",
+      "thumbnail_url": "https://picsum.photos/400/200?random=12",
+      "published_at": "2024-01-04T16:15:00Z",
+      "source": "mock-data"
     }
   ],
   "ads": [

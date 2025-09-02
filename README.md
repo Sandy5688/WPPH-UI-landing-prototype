@@ -11,14 +11,21 @@ This project demonstrates a content display UI with integrated advertising and b
 - **Mock API**: Complete mock data structure with posts, ads, and branding
 - **Pure HTML/CSS/JS**: No frameworks or build tools required
 
-## Mock API Structure
+## Mock Data Structure
 
-The mock API data (`mock-api-data.json`) includes:
+The mock data file (`mock-api-data.json`) includes:
 
-### Posts
-- Article content with titles, descriptions, categories
-- View counts and publication dates
-- Thumbnail images and links
+### Posts (Updated Schema)
+- Video/article-like items with the following fields:
+  - `id` (string)
+  - `title` (string)
+  - `description` (string)
+  - `tags` (array of strings)
+  - `category` (string)
+  - `media_url` (string)
+  - `thumbnail_url` (string)
+  - `published_at` (ISO date string)
+  - `source` (string)
 
 ### Ads
 - Multiple ad slots: `banner_top`, `sidebar_1`, `sidebar_2`, `banner_footer`, `inline_1`, `inline_2`, `mobile_banner`
@@ -33,15 +40,16 @@ The mock API data (`mock-api-data.json`) includes:
 
 ## Setup Instructions
 
-1. **Upload to MockAPI**:
-   - Copy the content from `mock-api-data.json`
-   - Upload it to your MockAPI endpoint: `https://68b43ecb45c90167876fdf56.mockapi.io/api/v1/posts`
+1. **Run a local static server (recommended to avoid CORS)**:
+   - Python: `python3 -m http.server 8080`
+   - Or npm: `npm exec --yes http-server -p 8080`
 
-2. **Open the Application**:
-   - Simply open `index.html` in your web browser
-   - Or serve it through any web server
+2. **Open the application**:
+   - Visit: `http://localhost:8080`
 
-3. **That's it!** The application will automatically load content, ads, and branding from your MockAPI
+3. **Data loading**:
+   - By default, the app fetches from the local `mock-api-data.json`.
+   - If you prefer a remote API, update `apiUrl` in `assets/js/app.js` and ensure the response matches the expected structure.
 
 ## File Structure
 
@@ -72,8 +80,9 @@ ui/
    - Social media links
 
 ### Changing Content
-1. Modify the `posts` array in `mock-api-data.json`
-2. Each post should include: `id`, `title`, `description`, `category`, `date`, `views`, `thumbnail`, `link`
+1. Modify the `posts` array in `mock-api-data.json`.
+2. Each post should include the updated fields: `id`, `title`, `description`, `tags`, `category`, `media_url`, `thumbnail_url`, `published_at`, `source`.
+3. Ads and branding remain under `ads` and `branding` and are unchanged.
 
 ## Browser Compatibility
 
